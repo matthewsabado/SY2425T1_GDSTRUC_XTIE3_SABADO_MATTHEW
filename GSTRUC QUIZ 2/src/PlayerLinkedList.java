@@ -20,8 +20,10 @@ public class PlayerLinkedList {
         System.out.print("null");
     }
 
-    public Player remove()
-    {}
+    /*public Player remove()
+    {
+
+    }
 
     public bool contains()
     {}
@@ -30,5 +32,5 @@ public class PlayerLinkedList {
     {}
 
     public int size()
-    {}
+    {} */
 }

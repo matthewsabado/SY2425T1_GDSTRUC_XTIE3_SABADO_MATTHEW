@@ -27,7 +27,7 @@ public static void printArray(int[] array)
     {
         System.out.println(array[i]);
     }
-    System.out.println("");
+    System.out.println(" ");
 }
 
 public static void main(String[] args) {

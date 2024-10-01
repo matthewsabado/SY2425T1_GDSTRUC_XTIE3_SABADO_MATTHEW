@@ -1,8 +1,25 @@
-Player player1 = new Player(123, "Ichan", 1);
-Player player2 = new Player(121, "Gio", 1);
-Player player3 = new Player(124, "Uly", 1);
 
-/* Array List */
+public class Main
+{
+        public static void main(String[] args)
+        {
+
+
+        Player player1 = new Player(123, "Ichan", 1);
+        Player player2 = new Player(121, "Gio", 1);
+        Player player3 = new Player(124, "Uly", 1);
+
+        PlayerLinkedList playerLinkedList = new PlayerLinkedList();
+
+        playerLinkedList.addToFront(player1);
+        playerLinkedList.addToFront(player2);
+        playerLinkedList.addToFront(player3);
+
+        playerLinkedList.printList();
+
+        }
+
+/* Array List
 
         ArrayList<Player> playerList = new ArrayList<Player>();
 
@@ -34,3 +51,6 @@ Player player3 = new Player(124, "Uly", 1);
         System.out.println("\nis Gio in the list? " + playerList.contains(new Player(121, "Gio", 1)));
 
         System.out.println("\nwhat is the index of Gio? " + playerList.indexOf(new Player(121, "Gio", 1)));
+*/
+
+}
