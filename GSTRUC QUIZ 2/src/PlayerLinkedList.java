@@ -20,17 +20,67 @@ public class PlayerLinkedList {
         System.out.print("null");
     }
 
-    /*public Player remove()
+    public String remove()
     {
 
+    if (head == null)
+    {
+        return null;
+    }
+        Player removedPlayer = head.getPlayer();
+        head = head.getNextPlayer();
+        return removedPlayer.name;
     }
 
-    public bool contains()
-    {}
 
-    public int indexOf()
-    {}
+    public boolean contains(Player player)
+    {
+        PlayerNode current = head;
+
+        while (current != null)
+        {
+            if (current.getPlayer().equals(player))
+            {
+                return true;
+            }
+
+            current = current.getNextPlayer();
+        }
+
+        return false;
+    }
+
+    public int indexOf(Player player)
+    {
+        PlayerNode current = head;
+
+        int index = 0;
+
+        while (current != null)
+        {
+            if (current.getPlayer().equals(player))
+            {
+                return index;
+            }
+
+            current = current.getNextPlayer();
+            index++;
+
+        }
+
+        return 0;
+    }
 
     public int size()
-    {} */
+    {
+       int size = 0;
+       PlayerNode current = head;
+
+       while (current != null)
+        {
+            size++;
+            current = current.getNextPlayer();
+        }
+            return size;
+    }
 }
