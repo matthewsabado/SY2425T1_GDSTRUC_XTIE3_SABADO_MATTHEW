@@ -1,4 +1,5 @@
 import java.util.NoSuchElementException;
+import java.util.Random;
 
 
 public class ArrayQueue
@@ -32,7 +33,7 @@ public class ArrayQueue
     public int size()
     {
         // just like stack, back is the "top"
-        return back;
+        return back - front;
     }
 
     // remove

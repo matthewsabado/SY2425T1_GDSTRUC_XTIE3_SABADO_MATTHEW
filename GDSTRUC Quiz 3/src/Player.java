@@ -1,22 +1,11 @@
 import java.util.Objects;
 
 public class Player {
-    int ID;
     String name;
-    int level;
 
-    public Player(int ID, String name, int level) {
-        this.ID = ID;
+    public Player(String name) {
         this.name = name;
-        this.level = level;
-    }
 
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
     }
 
     public String getName() {
@@ -27,17 +16,10 @@ public class Player {
         this.name = name;
     }
 
-    public int getLevel() {
-        return level;
-    }
-
-    public void setLevel(int level) {
-        this.level = level;
-    }
 
     @Override
     public String toString() {
-        return ID + ", " + name + ", " + level;
+        return name;
     }
 
     @Override
@@ -45,11 +27,11 @@ public class Player {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Player player = (Player) o;
-        return ID == player.ID && level == player.level && Objects.equals(name, player.name);
+        return Objects.equals(name, player.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(ID, name, level);
+        return Objects.hash(name);
     }
 }

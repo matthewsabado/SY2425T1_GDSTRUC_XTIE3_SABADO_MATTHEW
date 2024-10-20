@@ -23,7 +23,7 @@ public class Main
 
                 else
                 {
-                    System.out.println("Uly is absent");
+                    System.out.println("Gio is absent");
                 }
 
                 System.out.println("\n");
@@ -40,7 +40,7 @@ public class Main
 
                 else
                 {
-                        System.out.println("Uly is absent");
+                        System.out.println("Gio is absent");
                 }
         }
 }
